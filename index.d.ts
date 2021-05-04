@@ -4,7 +4,7 @@ declare module 'react-native-floating-hearts' {
 
     export interface FloatingHeartsProps extends ReactNative.ViewProps {
         count: number,
-        renderCustomShape?: React.ReactNode,
+        renderCustomShape?: (id: number) => void,
         style?: StyleProp<ViewStyle>,
         color?: ColorValue,
     }
